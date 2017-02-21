@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <!--INICIO - IMAGEM VIEW, NOME DA LOJA E TELEFONES-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/fotoDaLoja"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/no_photos_128pixel"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:paddingBottom="3dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="Loja Exemplo 001"
+                        android:id="@+id/nomeDaLoja"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/mapaDaLoja"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/map_64pixel"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:text="(83) 98888-0000"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:id="@+id/telefoneDaLoja"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.3"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/ligarParaLoja"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/cellphone_32pixel"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--FIM - IMAGEM VIEW, NOME DA LOJA E TELEFONES-->
+
+        <!--INICIO - SOBRE A LOJA-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Quem somos:"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:id="@+id/textView2" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.4">
+                <TextView
+                    android:textSize="16dp"
+                    android:text="@string/textoAreaTexte"
+                    android:layout_gravity="start"
+                    android:id="@+id/descricaoSobreLoja"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="7dp"/>
+            </ScrollView>
+
+        </LinearLayout>
+        <!--FIM - SOBRE A LOJA-->
+
+        <!--INICIO - PRODUTOS-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Produtos:"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.2">
+
+                <TextView
+                    android:id="@+id/textoParaLojaSemProdutos"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Não existe produtos para esta loja. Ainda... :/"
+                    android:textSize="22sp"
+                    android:textAlignment="center"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/produto01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/produto02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/produto03"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--FIM - PRODUTOS-->
+
+        <!--INICIO - FORMAS DE PAGAMENTO-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Formas de Pagamento:"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkboxDinheiro"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Dinheiro"
+                        android:textSize="20sp"
+                        android:checked="true"
+                        android:textColor="@color/checkboxChecked"
+                        android:clickable="false"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"/>
+
+                    <CheckBox
+                        android:id="@+id/checkboxOutrasFormas"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Outras Formas"
+                        android:textSize="20sp"
+                        android:textColor="@color/checkboxNotChecked"
+                        android:clickable="false"
+                        android:textAlignment="center"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:orientation="horizontal">
+
+                   <!-- Débito -->
+                   <CheckBox
+                       android:id="@+id/checkboxDebito"
+                       android:checked="true"
+                       android:textColor="@color/checkboxChecked"
+                       android:text="Débito"
+                       android:textSize="20dp"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:textAlignment="center"
+                       android:gravity="center_vertical"
+                       android:clickable="false"/>
+
+                   <CheckBox
+                       android:id="@+id/checkboxCredito"
+                       android:textColor="@color/checkboxNotChecked"
+                       android:text="Crédito"
+                       android:textSize="20dp"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:textAlignment="center"
+                       android:gravity="center_vertical"
+                       android:clickable="false"/>
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--FIM - FORMAS DE PAGAMENTO-->
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

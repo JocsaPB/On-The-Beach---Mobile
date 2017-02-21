@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textPraiaSelected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#e0e0e0" />
+
+    <LinearLayout
+        android:id="@+id/layoutSpinnersSegmento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spinnerSegmento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSpinnersCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/imagemViewSpinnerCategoria"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_weight="2"
+            android:src="@drawable/backbuttton_64bits"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="voltarParaSegmentos"
+            android:visibility="visible"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#dedede"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"></Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separadorPesquisaLojas"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#e0e0e0"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/listViewLojas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tvSemLojas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Não existe lojas para esta praia, ainda...\n :/"
+        android:textSize="35sp"
+        android:gravity="center|center_vertical"
+        android:visibility="gone"/>
+
+</LinearLayout>

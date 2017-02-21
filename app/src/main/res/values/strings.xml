@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">On The Beach</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="abas_pager">
+        <item>Pesquisar</item>
+        <item>Mapa</item>
+    </string-array>
+
+    <string name="lojas_pesquisadas">Lojas Pesquisadas</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="login">Login (Josias)</string>
+
+    <string name="textoAreaTexte">
+        A loja exemplo é composta em variedades para vestir você e sua família. Também trabalhos com acessórios totalmente artesanais. Pra sua família ficar ainda mais linda.Venha e confira!
+    </string>
+
+    <string name="textoAreaProduto">
+        A loja exemplo é composta em variedades para vestir você e sua família.
+    </string>
+
+
+    <string name="alisson">Alisson Carvalho
+Graduando em sistemas para internet, 5º período, Unipê. Atualmente trabalha no ramo de logística.</string>
+    <string name="jocsa">Jocsã Misrraine de Vasconcelos Rosendo
+Graduando em sistemas para internet, 5º período, Unipê.
+Estagiário na empresa Tribunal Regional Eleitoral da Paraíba.</string>
+    <string name="jose">José Ferreira da Silva
+Graduando em sistemas para internet, 5º período, Unipê. Atua no mercado como desenvolvedor frontend.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

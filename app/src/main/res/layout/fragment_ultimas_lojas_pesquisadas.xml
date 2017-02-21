@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ultimas_lojas_pesquisadas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="jaj.tct.com.onthebeach.activitys.UltimasLojasPesquisadasActivity">
+
+    <TextView
+        android:text="Últimas 20 Lojas pesquisadas"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+
+    <ListView
+        android:id="@+id/listviewUltimasLojasPesquisadas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

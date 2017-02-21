@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="350dp"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:layout_height="340dp">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/alisson"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:text="@string/alisson"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#e0e0e0"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/jocsa"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:text="@string/jocsa"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="#e0e0e0"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/jose"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:text="@string/jose"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

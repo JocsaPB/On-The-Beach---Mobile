@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/etLoginUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe seu usuário"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/etLoginSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe sua senha"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textWebPassword"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Permanecer logado?"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:onClick="Logar"/>
+
+    </LinearLayout>
+
+</LinearLayout>
